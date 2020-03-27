@@ -1,0 +1,50 @@
+.titleTab {
+  position: absolute;
+  background-color: #5FABC8;
+  width: 100%;
+  height: 600px ;
+  top: 25px;
+}
+.title {
+  position:relative;
+  font-family: "Spicy Rice", Courier, monospace;
+  color: #092632;
+  text-align: center;
+  font-size: 2cm;
+  padding: 100px 0;
+}
+.titleBackground {
+  position: absolute;
+  background-color: #092632;
+  width: 100%;
+  height: 675px;
+  top: 0px;
+  text-align: center;
+}
+.titleButton {
+  background-color: rgb(19, 126, 168);
+  border: 1px solid rgba(48, 40, 40, 0.76);
+  position: absolute; 
+  top: 350px;
+  z-index: 2;
+  height: 40px;
+  width: 100px;
+  display: inline-block;
+  transform: translateX(-50%);
+  padding-top:10px;
+  border-radius: 8px;
+}
+.buttonText {
+  top: 20px;
+  margin: auto;
+  color: silver;
+  transition-delay: 2s;
+}
+.titleButton:hover, .buttonText:hover {
+  background-color : #152329;
+  color: white;
+  cursor: pointer;
+}
+div.color:hover {
+  color: white;
+}
