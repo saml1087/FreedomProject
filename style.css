@@ -133,23 +133,34 @@ a {
   float: left;
   font-size: 20px;
 }
-.overviewBackground{ /*align overview page*/
+.overviewTitle{ /*align overview page*/
   background-color:  #092632;
   width: 100%;
-  height: 40px;
+  height: 75px;
   color: white;
-  position: relative;
+  position: absolute;
   top: 0px;
+  border: 1px solid white;
+  text-align: center;
 }
-.overviewTab{
+.overviewBackground{
   background-color: rgba(19, 126, 168, 0.527);
   width: 100%;
   height: 600px;
-  position: relative;
+  position: absolute;
   top: 0px;
 }
+.overviewText {
+  color: white;
+  position: absolute;
+  left: 40px;
+  top: 100px;
+  margin-right: 40px;
+  font-size: 25px;
+  line-height: 30px;
+}
 .testImage {
-  position: relative;
+  position: absolute;
   top: 200px;
   display: block;
   margin-left: auto;
