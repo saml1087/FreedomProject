@@ -1,3 +1,63 @@
+<style>
+  .margin-bottom {
+    margin-bottom: .5in;
+  }
+  .motherboard {
+    position: relative;
+    text-align: left;
+    top: 200px;
+  }
+  .motherboardInfo {
+    position: relative;
+    text-align: left;
+    top: 200px;
+    margin-left: 30px;
+    margin-right: 10px;
+  }
+  .case {
+    position: relative;
+    text-align: left;
+    top: 200px;
+  }
+  .caseInfo {
+    position: relative;
+    text-align: left;
+    top: 200px;
+    margin-left: 30px;
+    margin-right: 10px;
+  }
+  .cpu {
+    position: relative;
+    text-align: left;
+    top: 200px;
+  }
+  .cpuInfo {
+    position :relative;
+    text-align: left;
+    top: 200px;
+    margin-left: 30px;
+    margin-right: 10px;
+  }
+  .gpu {
+    position: relative;
+    text-align: left;
+    top: 200px;
+  }
+  .gpuInfo {
+    position: relative;
+    text-align: left;
+    top: 200px;
+    margin-left: 30px;
+    margin-right: 10px;
+  }
+  .component {
+    color: #0077b3;
+  }
+  .subtopic {
+    color:  #004466;
+  }
+
+</style>
 <!DOCTYPE html>
 <html> 
   <head>
@@ -8,8 +68,43 @@
   </head>
   <body class="PageBackground">
     <script src="script.js"></script>
-    <div class="PageTitle"><h1> Visit Page</h1></div>
-    <div class="PageText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    <div class="PageTitle"><h1> Compatibility</h1></div>
+    <a href = "visitPage.html"> <img class = "arrowPosition" src= "https://pluspng.com/img-png/arrow-png-no-background-download-this-image-as-600.png"> </a>
+    <div class="PageText"> When it comes to compatibility, it's important to know if you're able to set it up together. This can mean functionally-wise, or even if components can fit with each other.
+    <br>
+    Below Listed, is a list of components and whether they fit.
+    <br>
+    <div class="motherboard component"> Motherboard - </div>
+    <div class="motherboardInfo"> <span class="subtopic">Case</span> - There are many form factors of motherboards. Make sure that there is enough space for the motherboard to fit in the case. Check the case to see what kind of form factors it supports whether it's ATX, mini-ITX, micro-ATX, E-ATX. Also note that a small motherboard such as a mini-ITX will not look GOOD in a case with lots of empty space.. But that is just preference.
+    <br>
+    <span class="subtopic">The Processor </span>- One of the most important thing to note, is the fact that there are different motherboard socket types for the CPU Processor. This means that you must pay attention to the compatibility that the motherboard supports. The motherboard could also run into issues if your motherboard is outdated and cannot support the new generation of processor and requires a BIOS update. This is more complicated and it is prefered that the motherboard already is updated and compatible with the CPU.
+    <br>
+    <span class="subtopic"> CPU Cooler </span>- Most motherboards will support most coolers. Typically, fan coolers the easiest to install, either by pushing down on the corners of the fan, or unscrewing the brackets of the motherboard to screw down the fan into the motherboard itself. Look into the fan's manual for further instructions.
+    <br>
+    <span class="subtopic"> HardDrive/SSD</span> - It's important to know whether your motherboard supports the form of your HDD or SSD. This is more crucial for SSDs since they can be in forms of a NVME M.2 Drive, or a 2.5" drive. Nonetheless, make sure that if you're installing a M.2 SSD drive, make sure the motherboard has that feature. In addition, make sure to find out how many drives the motherboard can support.
+    <br>
+    <span class="subtopic">Random Access Memory</span> - RAM is simple to install. The only thing that you need to know about the compatibility between the motherboard and RAM is whether or not the motherboard supports that specific speed of RAM. It's usually listed in the specification of the motherboard. Motherboards typically support from a variety of speeds such as 2133MHz to 3600MHz. It's also important to keep in mind the amount of DIMM slots that the motherboard has. This tells you how many slots of RAM you may insert into the motherboard.
+    <br>
+    <span class="subtopic"> Graphics Card (GPU)</span> - Usually most motherboards have a PCI-e x16 slot which is the place where you would insert the graphics card. However, if you do plan to add multiple video cards (or even other cards like sound cards), make sure that your motherboard supports that.
+    <br>
+    <span class="subtopic">Power Supply (PSU)</span> - There's not a huge compatibility issue with Power Supplies and the motherboard, but do keep in mind that there's usually a 24 pin power supply cord that powers up the motherboard. (Note: It's also good to get a powersupply with 80+ rating so that it's a reliable PSU).
+    <br>
+    </div>
+  <div class=" case component"> Case -</div>
+  <div class= "caseInfo"><span class="subtopic"> CPU Cooler</span> - With the case, many of its compatibility runs with its ability to fit. Make sure that your CPU cooler (whether its a fan cooler or AIO Liquid Cooler) is able to fit into the case. Typically, check for the case's max height for fan coolers, and the maximum width that it supports for installing radiators for liquid coolers.  
+    <br>
+    <span class="subtopic">Power Supply (PSU)</span> - Make sure that the power supply is able to fit in the case. Usually it's area to be placed is on the bottom of the case. Check for more details on the case itself. In addition, note whether your PSU is in a ATX form factor(usually for larger PCs) and SFX form factor (for smaller PC cases).
+    <br>
+    <span class="subtopic">Graphics Card (GPU)</span> - Make sure that the height and the width of the Graphics card is compatible with fitting into the case. If the graphics card to too tall, it may not allow the case to close. Usually the limit of the height/width is located in the case's specifications. Also make sure that the case has enough expansion slots to allow the GPU to be mounted into the case.
+    <br> 
+    <span class="subtopic">HDD/ SSD</span> - Some cases come with brackets where you're able to mount your drives to. Check to make sure the amount of drives the case allows you to store. Typically, SSDs are 2.5" inches and 3.5" inches for larger HDDs.
+  </div>
+  <div class = "cpu component"> The Processor (CPU) -   </div>
+  <div class="cpuInfo"><span class="subtopic"> CPU Cooler </span>- If the CPU's cooler Thermal Design Power (Located in specs) is cool enough to get rid of the heat of the CPU. Both of these details should be located in the description of both the cooler and the CPU. </div>
+  <div class="gpu component"> Graphics Card - </div>
+  <div class="gpuInfo margin-bottom"><span class="subtopic"> Power Supply (PSU)</span> - Usually located in the description of a GPU, it would say the minimum recommended wattage in order to run the graphics card. If you don't have a power supply with enough wattages to support your graphics card, it may run into issues. In addition, the PSU should have the right cable in order to support your graphics card with the correct plug </div>
+  
+    </div>
     <img class="PageImage" src="https://previews.123rf.com/images/skarintut/skarintut1712/skarintut171200006/91113819-computer-hardware-icons-and-pc-components-vector-illustration.jpg" width="450px;">
   </body>
 </html>

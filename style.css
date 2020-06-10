@@ -26,7 +26,7 @@
   border: 1px solid rgba(48, 40, 40, 0.76);
   position: absolute; 
   top: 400px;
-  z-index: 2;
+  z-index: 5;
   height: 35px;
   width: 50px;
   display: inline-block;
@@ -51,6 +51,14 @@
   color:white;
   font-size: 25px;
   left: 20px;
+}
+.footerSource {
+  position: absolute;
+  bottom: 200px;
+  z-index: 3;
+  color: silver;
+  font-size: 25px;
+  right: 20px;
 }
 /* Incomplete / tbd
 .leftTab {
@@ -81,7 +89,7 @@ ul .navigationBar {
 }
 li a{ /*Top Navigation Bar... font-family tbd*/
   display: inline;
-  display: block;
+  display: block; 
   color:aliceblue;
   background-color: rgb(24, 104, 136);
   text-align: center;
@@ -135,12 +143,15 @@ a {
 }
 .overviewTitle{ /*align overview page*/
   background-color:  #092632;
-  width: 100%;
+  width: 500px;
   height: 75px;
   color: white;
   position: absolute;
+  display: block;
   top: 0px;
   border: 1px solid white;
+  margin-left: 50%;
+  transform: translatex(-50%);
   text-align: center;
 }
 .overviewBackground{
@@ -183,9 +194,9 @@ div a{
   transform: rotate(-20deg);
   opacity: .75;
   z-index: 2;
-  width: 500px;
+  width: 480px;
   position: absolute;
-  left: 40px;
+  left: 45px;
   top: 100px;
   border: 1px solid black;
 }
@@ -193,11 +204,11 @@ div a{
   transform: rotate(10deg);
   opacity: .75;
   z-index: 2;
-  width: 500px;
+  width: 480px;
   position: absolute;
-  right: 40px;
+  right: 45px;
   top: 75px;
-  border: 1px solid black;
+  border: 1px solid black; 
 }
 .PageBackground {
   background-color: #5FABC8;
@@ -210,6 +221,15 @@ div a{
   top: 125px;
   left: 20px;
   margin-right: 50%;
+  line-height: 35px;
+}
+.visitPageText {
+  color: white;
+  font-size: 23px;
+  position:absolute;
+  top: 125px;
+  left: 20px;
+  margin-right: 40%;
   line-height: 35px;
 }
 .PageTitle {
@@ -230,3 +250,200 @@ div a{
   top: 120px;
   border: 4px solid black;
 }
+.websiteLandingBackground {
+  background-color: #5FABC8;
+  height: 100%;
+  width: 100%;
+}
+button.accordion{
+  background-color: lightblue;
+  list-style: none;
+  height: fit-content;
+  width: 100%;
+  color: white;
+  font-size: 23px;
+  margin-right: 50%
+}
+.panel {
+  margin-left: 1cm;
+  color: white;
+  font-size: 20px;
+  background-color:rgb(84, 148, 173);
+  text-align: justify;
+  overflow: hidden;
+  display: none;
+  margin-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+  
+@media screen and (max-width: 1080px) and (min-width: 600px){
+  .startingImage {
+    width: 200px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    opacity: .75;
+    transform: rotate(0deg);
+  }
+  .startingImage1 {
+    width: 200px;
+    position: absolute;
+    right: 20px;
+    top: 375px;
+    opacity: .75;
+    transform: rotate(0deg)
+  }
+  .PageImage {
+    position: absolute;
+    display: block;
+    top: 125px;
+    border: 4px solid black;
+    z-index: -5;
+    opacity: 0.8;
+    text-align: center;
+    right: 20px;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    transform: translatex(-48%);
+  }
+  .PageText {
+    color: white;
+    font-size: 23px;
+    position:absolute;
+    top: 650px;
+    line-height: 27px;
+    text-align: center;
+    margin-right: 20px;
+}
+  .visitPageText {
+    color: white;
+    font-size: 23px;
+    position:absolute;
+    top: 455px;
+    left: 20px;
+    margin-right: 20px;
+    line-height: 27px;
+    text-align: center;
+}
+  .PageTitle {
+    display:block;
+    position: absolute;
+    top: 10px;
+    color: white;
+    background-color: #092632;
+    border: 1px solid black;
+    width: 350px;
+    border-radius: 3px;
+    padding-left: 20px;
+    text-align: center;
+    margin-left: 45%;
+    transform: translatex(-50%);
+}
+  button.accordion {
+    background-color: lightblue;
+    list-style: none;
+    height: fit-content;
+    width: 100%;
+    color: white;
+    font-size: 23px;
+    margin-right: 20px;
+  }
+    .arrowPosition {
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    width: 100px;
+    display: block;
+    z-index: 6;
+  }
+  .arrowPosition:hover {
+    filter: invert(80%);
+  }
+}
+@media screen and (max-width: 600px){
+  .startingImage {
+    display: none;
+  }
+  .startingImage1 {
+    display: none;
+  }
+  .PageImage {
+    display: none;
+  }
+  .PageText {
+    color: white;
+    font-size: 20px;
+    position:absolute;
+    top: 150px;
+    line-height: 27px;
+    text-align: center;
+    margin-right: 20px;
+    
+  }
+  .visitPageText {
+    color: white;
+    font-size: 20px;
+    position:absolute;
+    top: 100px;
+    left: 20px;
+    margin-right: 20px;
+    line-height: 27px;
+    text-align: center;
+  }
+  .PageTitle {
+    display:block;
+    position: absolute;
+    top: 10px;
+    color: white;
+    background-color: #092632;
+    border: 1px solid black;
+    width: 300px;
+    border-radius: 3px;
+    padding-left: 20px;
+    text-align: center;
+    margin-left: 45%;
+    transform: translatex(-50%);
+  }
+  .aboutUsInfo {
+    bottom: 20px;
+  }
+  button.accordion {
+    background-color: lightblue;
+    list-style: none;
+    height: fit-content;
+    width: 100%;
+    color: white;
+    font-size: 23px;
+    margin-right: 20px;
+  }
+
+  .arrowPosition {
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    width: 80px;
+    display: block;
+    z-index: 6;
+  }
+  .arrowPosition:hover {
+    filter: invert(80%);
+  }
+  
+}
+@media screen and (min-width: 1080px) {
+    .arrowPosition {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 100px;
+    display: block;
+    filter: invert(80%);
+    z-index: 6;
+  }
+  .arrowPosition:hover {
+    filter: invert(4%);
+  }
+}
+

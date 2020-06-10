@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html> 
   <head>
     <meta charset="utf-8">
@@ -8,8 +9,49 @@
   </head>
   <body class="PageBackground">
     <script src="script.js"></script>
-    <div class="PageTitle"><h1> Topic Components</h1></div>
-    <div class="PageText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    <div class="PageTitle"><h1> Hardware Components</h1></div>
+    <br>
+    <a href = "visitPage.html"> <img class = "arrowPosition" src= "https://pluspng.com/img-png/arrow-png-no-background-download-this-image-as-600.png"> </a>
+    <div class="PageText">
+
+There are several components within a computer. Each component is dedicated to perform a certain task.
+Some of these components include: <i>(Click on Names For More Info)<i>
+<br>
+ <button class="accordion">Motherboard</button>
+  <p class="panel">The circuit board, presented in many sizes (such as ATX, mini-ITX, micro-ATX, EATX) allow the communication between components that's plugged into it. These include the processor, any case front panel connectors, RAM, Graphics Card, and many more.</p>
+ <button class="accordion">The Processor (CPU)</button>
+  <p class="panel"> The processor, or the CPU, plays a crucial part in a computer system. Typically, some processors contain an integrated graphics card (which means that it has a GPU built into it, performing graphic related calculations), but there are also processors do not have an integrated graphics card. The processor itself is basically the brain of the system. It allows for calculations to be performed and its efficiency can be defined by its cores, threads, and clock speed.  </p>
+ <button class="accordion"> CPU Cooler</button>
+  <p class="panel"> A CPU Cooler is exactly what it's called. In order to keep a CPU cool in terms of temperature, it cannot become overwhelmed which leads to performance lost. It can be in a AIO Liquid Cooler, or a regular Fan Cooler. Note that some processors come with a stock cooler which typically is a Fan Cooler.</p>
+ <button class="accordion"> Random Access Memory (RAM)</button>
+  <p class="panel"> Random Access Memory is crucial as it is the component that controls the amount of tabs you have on. Typically, if you're running several tabs all the time, it's better to have higher storage of RAM. This basically allows the CPU to take information quickly from the RAM instead of the Hard Drive (which would be a lot slower). It can also have a speed attached to it. Typically regular computers have around 2133 MHz of RAM, but higher end PC's have around 3000 MHz at least.</p>
+ <button class="accordion"> Graphics Card </button>
+  <p class="panel"> The Graphics Card (also known as Video Cards or GPU) is the card that handles heavy graphics running in your monitor. As some CPU's come with integrated GPUs, this is only necessary if you would like to run Higher Quality Games with High Graphics. Even if your processor comes with an integrated graphics card, it's still recommended to get a separate GPU if you're trying to run high graphics games.</p>
+ <button class="accordion"> Power Supply (PSU)</button>
+  <p class="panel"> The Power Supply basically powers your whole computer. When placed in the case, it has multiple wires that connect to the motherboard and the components in your build. The PSU will then be plugged into an outlet which allows power to run through the PC.</p>
+ <button class="accordion"> Hard Disk Drive/Solid State Drive (HDD/SSD)</button>
+  <p class="panel"> The HDD and SSD are storage devices that holds all your files and games. Typically for faster boot times, it's recommended to get an SSD since it's made out of electronical parts unlike a Hard Drive that uses mechanical parts to access data. Hard Drives tend to be more storage for lower speeds, while SSD's are higher speed for lower storage.</p>
+ <button class="accordion">Case</button>
+  <p class="panel"> The Case holds all of your components together. Typically, your case should have fans that allow airflow to be positive, meaning all of the heat will leave the case, with more air generated inside the case.Some Cases come with a thermal glass side panel which allows you to see inside. It's also a nice touch to decorate a case but that's really optional. Overall, it's not necessary, but the fans should have both exhaust and intake fans.</p>
+ <br>
+ <br>
+<strong>Note that these excludes peripherals (keyboards, mouse, etc)</strong>
+</div>
     <img class="PageImage" src="https://previews.123rf.com/images/skarintut/skarintut1712/skarintut171200006/91113819-computer-hardware-icons-and-pc-components-vector-illustration.jpg" width="450px;">
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+ acc[i].addEventListener("click", function() {
+   var panel = this.nextElementSibling;
+   if (panel.style.display === "block") {
+     panel.style.display = "none";
+   } else {
+     panel.style.display = "block";
+   }
+ });
+}
+ </script>
+
   </body>
 </html>
